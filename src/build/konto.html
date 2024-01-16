@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make it better</title>
+</head>
+<body>
+    <section>
+        <h2>Witaj, <b><span id="userName"></span>!!!</h2>
+        <button id='logout-btn'>Wyloguj</button>
+    </section>
+
+    <section>
+        <h3>OpenAi</h3>
+        <form id='openai-form'>
+            <label>Wprowadź wiadomość</label>
+            <input type="text" name='openai-message' placeholder="wiadomość" id="openai-message">
+            <input type="submit" value='Wyślij'>
+            <label id='Errors'></label>
+        </form>
+        <p id="odpowiedz"></p>
+    </section>
+
+    <section>
+        <h3>Informacje o obrazie</h3>
+        <form id="openaiImgDescription-form">
+            <label>Czego chcesz się dowiedzić o wygenerowany obrazie</label>
+            <input type="text" name='openaiImgDescription-description' placeholder="poszukiwane informacje" id="openaiImgDescription-description">
+            <input type="submit" value='Wyślij'>
+            <label id='ErrorsImgDesc'></label>
+        </form>
+        <p id="odpowiedzImgDesc"></p>
+    </section>
+
+    <section>
+        <h3>Generowanie obrazów</h3>
+        <form id="openaiImg-form">
+            <label>Opis obrazu</label>
+            <input type="text" name='openaiImg-description' placeholder="opis" id="openaiImg-description">
+            <input type="submit" value='Wyślij'>
+            <label id='ErrorsImg'></label>
+        </form>
+        <aside id="imgThere">
+            
+        </aside>
+        <p id="odpowiedzImg"></p>
+    </section>
+
+    <script src="js/konto.js"></script>
+</body>
+</html>

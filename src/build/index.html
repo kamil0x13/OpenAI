@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI</title>
+    <link rel="stylesheet" href="./style.css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.3/paper-full.min.js"></script> 
+</head>
+<body>
+    <div id="back">
+        <canvas id="canvas" class="canvas-back"></canvas>
+        <div class="backRight">    
+        </div>
+        <div class="backLeft">
+        </div>
+      </div>
+
+      <div id="slideBox">
+        <div class="topLayer">
+          <div class="left">
+            <div class="content">
+              <h2>Rejestracja</h2>
+              <form id="form-signup">
+                <div class="form-element form-stack">
+                  <label for="name-signup" class="form-label">Nazwa</label>
+                  <input id="name-signup" type="text" name="name" required>
+                </div>
+                <div class="form-element form-stack">
+                  <label for="password-signup" class="form-label">Hasło</label>
+                  <input id="password-signup" type="password" name="password" required>
+                </div>
+                <div class="form-element form-submit">
+                  <button id="signUp" class="signup" type="submit" name="signup">Zarejestruj</button>
+                  <button id="goLeft" class="signup off" type="button">Logowanie</button> 
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="right">
+            <div class="content">
+              <h2>Logowanie</h2>
+              <form id="form-login">
+                <div class="form-element form-stack">
+                  <label for="name-login" class="form-label">Nazwa</label>
+                  <input id="name-login" type="text" name="name" required>
+                </div>
+                <div class="form-element form-stack">
+                  <label for="password-login" class="form-label">Hasło</label>
+                  <input id="password-login" type="password" name="password" required>
+                </div>
+                <div>
+                    <p id="errors-login"></p>
+                </div>
+                <div class="form-element form-submit">
+                  <button id="logIn" class="login" type="submit" name="login">Zaloguj</button>
+                  <button id="goRight" class="login off" type="button" name="signup">Rejestracja</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="./js/home.js"></script>
+      <script src="./js/loginRegister.js"></script>
+</body>
+</html>
