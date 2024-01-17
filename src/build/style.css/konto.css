@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 2vw;
+}
+
+nav {
+    display: flex;
+    padding: 1vh 1vw;
+}
+
+nav span {
+    padding: 0 2vw;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.activ {
+    color: #512DA8;
+}
+
+button {
+    padding: 0.8em 1.2em;
+    margin: 0 10px 0 0;
+    width: auto;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #fff;
+    line-height: 1em;
+    letter-spacing: 0.6px;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+    border: 0;
+    outline: 0;
+    transition: all 0.25s;
+    background: #673AB7;
+}
+
+button:hover {
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+    background: #512DA8;
+    cursor: pointer;
+}
+
+section {
+    padding: 1vh 1vw;
+}
+
+input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 1em;
+    padding: 8px 1px;
+    margin-top: 0.1em;
+    border-bottom: 1px solid #212121;
+}
+
+input:focus,
+input:active {
+    border-color: #673AB7;
+}
+
+.form-element {
+    margin: 1.6em 0;
+}
+
+.form-element.form-submit {
+    margin: 1.6em 0 0;
+}
+
+.form-stack {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.odpowiedz {
+    display: flex;
+    flex-direction: column-reverse
+}
+
+.response {
+    padding: 2vh 0;
+}
+
+.response {
+    margin: 1vh 0;
+    color: #fff;
+    padding: 1vh 1vw;
+    background: #432688;
+}
+
+.response:nth-child(2n) {
+    background: #7248bd;
+}
+
+.response p {
+    padding: .5vh 0;
+    margin: 1vh 0;
+    display: block;
+    border-bottom: #212121 1px dotted;
+}
+
+img {
+    margin: 2vh auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 60vw;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+form{
+    margin-bottom: 2vh;
+}
+
+.asideImg {
+    display: flex;
+    justify-content: center;
+}
