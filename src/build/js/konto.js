@@ -23,7 +23,7 @@ navImg.addEventListener('click', () => {
 //Logout
 $logoutBtn = document.getElementById('logout-btn')
 $logoutBtn.addEventListener('click', () => {
-    fetch('http://localhost:3001/user/logout', {
+    fetch('/user/logout', {
         method: "post",
         headers: {
             'Authorization': 'Bearer ' + localStorage.getItem('jwt')
@@ -49,7 +49,7 @@ $loginForm.addEventListener('submit', (e) => {
     const prompt = document.getElementById('openai-message').value
     document.getElementById('openai-message').value = ''
 
-    fetch('http://localhost:3001/openai', {
+    fetch('/openai', {
         method: "post",
         headers: {
             'Accept': 'application/json',
@@ -84,7 +84,7 @@ $loginForm.addEventListener('submit', (e) => {
     const prompt = document.getElementById('openaiImg-description').value
     document.getElementById('openaiImg-description').value = ''
 
-    fetch('http://localhost:3001/openaiImg', {
+    fetch('/openaiImg', {
         method: "post",
         headers: {
             'Accept': 'application/json',
@@ -113,7 +113,7 @@ $loginForm.addEventListener('submit', (e) => {
     }
     document.getElementById('openaiImgDescription-description').value = ''
 
-    fetch('http://localhost:3001/openaiImgDescription', {
+    fetch('/openaiImgDescription', {
         method: "post",
         headers: {
             'Accept': 'application/json',

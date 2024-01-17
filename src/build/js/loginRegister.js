@@ -5,7 +5,7 @@ formLogin.addEventListener('submit', (e) => {
     const name = document.getElementById('name-login').value
     const password = document.getElementById('password-login').value
 
-    fetch('http://localhost:3001/user/login', {
+    fetch('/user/login', {
         method: "post",
         headers: {
             'Accept': 'application/json',
@@ -36,7 +36,7 @@ formRegister.addEventListener('submit', (e) => {
 
     let fail = false;
 
-    fetch('http://localhost:3001/user', {
+    fetch('/user', {
         method: "post",
         headers: {
             'Accept': 'application/json',
